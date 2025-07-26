@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Fashion World</title>
+  <style>
+    * {
+      margin: 0; padding: 0; box-sizing: border-box;
+      font-family: 'Helvetica Neue', sans-serif;
+    }
+    body {
+      background: #fff; color: #333;
+      line-height: 1.6;
+    }
+    header {
+      background: #111;
+      color: #fff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+    }
+    header .logo {
+      font-size: 1.8rem;
+      font-weight: bold;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+    }
+    nav ul li {
+      margin-left: 2rem;
+    }
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+    nav ul li a:hover {
+      color: #ff6b6b;
+    }
+    .hero {
+      background: url('https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=1350&q=80') no-repeat center/cover;
+      height: 80vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-align: center;
+      padding: 0 2rem;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
+    }
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+      text-shadow: 1px 1px 5px rgba(0,0,0,0.6);
+    }
+    .btn {
+      background: #ff6b6b;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      text-decoration: none;
+      border-radius: 25px;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+    .btn:hover {
+      background: #ff3b3b;
+    }
+    .featured {
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+    .featured h2 {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+    }
+    .product-grid {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 2rem;
+    }
+    .product-card {
+      background: #f9f9f9;
+      padding: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      width: 250px;
+      transition: transform 0.3s;
+    }
+    .product-card:hover {
+      transform: translateY(-5px);
+    }
+    .product-card img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 1rem;
+    }
+    footer {
+      background: #111;
+      color: #ccc;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">FashionWorld</div>
+    <input type="text" id="searchBar" placeholder="Search " onkeyup="filterProducts()" />
+  <nav>
+    <ul>
+      <li><a href="Dress.html">Home</a></li>
+      <li><a href="home.html">Shop</a></li>
+      <li><a href="collection.html">Collections</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      
+    </ul>
+  </nav>
+</header>
+
+<section class="hero">
+  <div>
+    <h1>Style That Speaks</h1>
+    <p>Explore the latest trends and timeless classics. Fashion made easy.</p>
+ <a href="file:///C:/Users/HWLAB-I/Desktop/home.html" class="btn">Shop Now</a>
+  </div>
+</section>
+
+
+<section class="featured">
+  <h2>Featured Collections</h2>
+  <div class="product-grid">
+    <div class="product-card">
+      <img src="summer.webp" alt="summer dress" />
+      <h3>Summer dress</h3>
+      <p>Rs 799</p>
+    </div>
+    <div class="product-card">
+      <img src="dr.jpg" alt="Casual Look" />
+      <h3>Casual Look</h3>
+      <p>Rs 1000</p>
+    </div>
+    <div class="product-card">
+      <img src="pr.jpg" alt="Evening Elegance" />
+      <h3>Party Wear</h3>
+      <p>Rs 3000</p>
+    </div>
+  </div>
+</section>
+
+</body>
+</html>
